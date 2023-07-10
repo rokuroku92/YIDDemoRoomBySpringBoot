@@ -1,0 +1,60 @@
+body {
+    padding: 0px;
+    background-color: #2F2725;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+    min-width: 875px;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.container {
+    /* margin: 0px; */
+    margin-left: 5em;
+    text-align: center;
+    /* padding-top: 10px; */
+    padding: 4%;
+    padding-top: 2%;
+    max-width: 100%;
+    justify-content: center;
+}
+.container.hasNotify{
+    margin-right: 20em;
+}
+.d-flex{
+    background-color: #3E3A39;
+}
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    /*fill: #91BA55;*/
+    fill: #ffffff;
+}
+.nav-flush .nav-link {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 0.6rem!important;
+}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #EAC343;
+}
+/* .nav-link.active {
+    background-image: url("${pageContext.request.contextPath}/image/sidebar_active.png");
+} */
+footer{
+    color: #FFFFFF;
+}
