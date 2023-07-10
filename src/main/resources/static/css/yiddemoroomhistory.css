@@ -25,7 +25,7 @@
     padding: 10px;
     padding-left: 0px;
     padding-right: 0px;
-    background-color: #303030;
+    background-color: #3E3A39;
 }
 .task{
     min-width: 800px;
@@ -81,9 +81,6 @@
     padding-top: 1.5%!important;
     font-size: 0.8em;
 }
-.right{
-    float: right;
-}
 .taskBar{
     padding-top: 4.8%;
 }
@@ -92,23 +89,23 @@
     max-height: 55em;
     overflow: auto;
     margin: 1em;
-    margin: 1.6em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
     border-radius: 0.6rem!important;
-    background-color: #FFFFFF;
-    padding: 10px;
+    color: #FFFFFF;
+    background-color: #3E3A39;
+    /* background-color: #303030; */
 }
 #notification .row{
     margin-top: 0.5em;
     margin-bottom: 0.5em; 
-    min-width: 600px;
+    height: 3em;
 }
 .message{
     margin-left: 0.6em;
     margin-right: 0.6em;
-    background-color: #EDEDED;
-    height: 3em;
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+    background-color: #5C5C5C;
+    /* background-color: #303030; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -132,21 +129,25 @@
 .nfStatus.danger{
     background-color: #FF0000;
 }
-.messageContent{
+.messageContentDiv{
     width: 100%;
     padding-left: 3%;
     text-align: left;
 }
-.messageContent label{
+.messageTitle{
     display: inline;
     min-height: 1.3em;
     font-size: 1.3em;
 }
-.messageContent p{
+.messageContent{
     padding-left: 1.5%;
     display: inline;
     min-height: 1em;
     font-size: 1em;
+}
+.messageTime{
+    padding-top: 0.5%;
+    float:right;
 }
 .taskstatus{
     display: flex;

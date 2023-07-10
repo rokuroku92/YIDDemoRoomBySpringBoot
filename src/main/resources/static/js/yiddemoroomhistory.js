@@ -140,8 +140,8 @@ function addNotifications(notifications){  // 更新資料
                 level = 'normal';
                 break;
         }
-        notificationsHTML += '<div class="row"><div class="col message"><div class="nfStatus '+level+'"></div><div class="messageContent">' +
-                    '<label>'+notifications[i].title+'</label><p>'+notifications[i].content+'</p><div class="right">'+year+"/"+month+"/"+day+'&nbsp;'+hour+":"+minute+":"+second+'</div></div></div></div>';
+        notificationsHTML += '<div class="row"><div class="col message"><div class="nfStatus '+level+'"></div><div class="messageContentDiv">' +
+                    '<label class="messageTitle">'+notifications[i].title+'</label><label class="messageContent">'+notifications[i].content+'</label><label class="messageTime">'+year+"/"+month+"/"+day+'&nbsp;'+hour+":"+minute+":"+second+'</label></div></div></div>';
     }
     document.getElementById("notification").innerHTML = notificationsHTML;
 }
