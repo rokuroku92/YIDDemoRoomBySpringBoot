@@ -203,7 +203,6 @@ public class ApiController {
         }
         return gson.toJson(list);
     }
-    
     @RequestMapping(value = "/sendTask", produces = MediaType.TEXT_PLAIN_VALUE)
     public String sendTask(@RequestParam("agv") String agv, @RequestParam("start") String start,
                             @RequestParam("terminal") String terminal, @RequestParam("mode") String mode, @RequestParam("time") String time){

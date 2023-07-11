@@ -18,7 +18,11 @@ public class SendTaskService {
     private String lastDate;
 
     public boolean insertTask(String time, String agv, String start, String terminal,String mode) {
-        
+        if(time.equals("")
+            ||agv.equals("")
+            ||terminal.equals("")
+            ||mode.equals(""))return false;
+
         String lastTaskNumber = taskDao.selectLastTaskNumber();
         if (lastDate == null) {
             // 伺服器重啟
@@ -36,7 +40,7 @@ public class SendTaskService {
             serialNumber++;
         }
         String taskNumber = "#" + lastDate + String.format("%04d", serialNumber);
-        
+
         return ("".equals(start)) ? 
                 taskDao.insertTaskNoStart(taskNumber, time, agv, terminal, mode) : 
                 taskDao.insertTask(taskNumber, time, agv, start, terminal, mode);
