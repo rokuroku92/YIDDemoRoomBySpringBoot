@@ -2,14 +2,14 @@ package com.yid.demoroom.model;
 
 public class Analysis {
     private Long analysisId;
-    private Long agvId;
-    private Long year;
-    private Long month;
-    private Long day;
-    private Long week;
-    private Long workingHours;
-    private Long openHours;
-    private Long task;
+    private Integer agvId;
+    private Integer year;
+    private Integer month;
+    private Integer day;
+    private Integer week;
+    private Integer workingHours;
+    private Integer openHours;
+    private Integer task;
 
     public Long getAnalysisId() {
         return analysisId;
@@ -19,71 +19,67 @@ public class Analysis {
         this.analysisId = analysisId;
     }
 
-    public Long getAgvId() {
+    public Integer getAgvId() {
         return agvId;
     }
 
-    public void setAgvId(Long agvId) {
+    public void setAgvId(Integer agvId) {
         this.agvId = agvId;
     }
 
-    public Long getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(Long year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 
-    public Long getMonth() {
+    public Integer getMonth() {
         return month;
     }
 
-    public void setMonth(Long month) {
+    public void setMonth(Integer month) {
         this.month = month;
     }
 
-    public Long getDay() {
+    public Integer getDay() {
         return day;
     }
 
-    public void setDay(Long day) {
+    public void setDay(Integer day) {
         this.day = day;
     }
 
-    public Long getWeek() {
+    public Integer getWeek() {
         return week;
     }
 
-    public void setWeek(Long week) {
+    public void setWeek(Integer week) {
         this.week = week;
     }
 
-    public Long getWorkingHours() {
+    public Integer getWorkingHours() {
         return workingHours;
     }
 
-    public void setWorkingHours(Long workingHours) {
+    public void setWorkingHours(Integer workingHours) {
         this.workingHours = workingHours;
     }
 
-    public Long getOpenHours() {
+    public Integer getOpenHours() {
         return openHours;
     }
 
-    public void setOpenHours(Long openHours) {
+    public void setOpenHours(Integer openHours) {
         this.openHours = openHours;
     }
 
-    public Long getTask() {
+    public Integer getTask() {
         return task;
     }
 
-    public void setTask(Long task) {
+    public void setTask(Integer task) {
         this.task = task;
     }
-    
-    
-
-    
 }
