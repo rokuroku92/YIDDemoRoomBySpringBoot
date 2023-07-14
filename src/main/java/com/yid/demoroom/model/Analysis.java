@@ -7,9 +7,26 @@ public class Analysis {
     private Integer month;
     private Integer day;
     private Integer week;
-    private Integer workingHours;
-    private Integer openHours;
+
+    private Integer workingMinute;
+    private Integer openMinute;
     private Integer task;
+
+    public Integer getWorkingMinute() {
+        return workingMinute;
+    }
+
+    public void setWorkingMinute(Integer workingMinute) {
+        this.workingMinute = workingMinute;
+    }
+
+    public Integer getOpenMinute() {
+        return openMinute;
+    }
+
+    public void setOpenMinute(Integer openMinute) {
+        this.openMinute = openMinute;
+    }
 
     public Long getAnalysisId() {
         return analysisId;
@@ -59,21 +76,6 @@ public class Analysis {
         this.week = week;
     }
 
-    public Integer getWorkingHours() {
-        return workingHours;
-    }
-
-    public void setWorkingHours(Integer workingHours) {
-        this.workingHours = workingHours;
-    }
-
-    public Integer getOpenHours() {
-        return openHours;
-    }
-
-    public void setOpenHours(Integer openHours) {
-        this.openHours = openHours;
-    }
 
     public Integer getTask() {
         return task;

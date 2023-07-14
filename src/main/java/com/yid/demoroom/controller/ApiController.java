@@ -8,7 +8,6 @@ import com.yid.demoroom.model.Mode;
 import com.yid.demoroom.model.Notification;
 import com.yid.demoroom.model.Station;
 import com.yid.demoroom.model.Task;
-import com.yid.demoroom.repository.ShareDataDao;
 import com.yid.demoroom.service.AnalysisService;
 import com.yid.demoroom.service.HomePageService;
 import com.yid.demoroom.service.SendTaskService;
@@ -38,9 +37,7 @@ public class ApiController {
     
     @Autowired
     private SendTaskService sendTaskService;
-    
-    @Autowired
-    private ShareDataDao shareDataDao;
+
 
         /*
         public String getJson() throws IOException { 
@@ -132,17 +129,6 @@ public class ApiController {
     public String getModes(){
         List<Mode> list = homePageService.queryModes();
         return gson.toJson(list);
-    }
-    
-    @GetMapping(value = "/homepage/iupdatetn", produces = MediaType.TEXT_PLAIN_VALUE)
-    public String iUpdateTaskAndNotification(){
-        Integer iUpdate = shareDataDao.queryIUpdate();
-        return "iUpdate: "+iUpdate.toString();
-//        if(iUpdate>0){
-//            iUpdate=0;
-//            return "Yes";
-//        }else
-//            return "No";
     }
     
     static int tempId;
